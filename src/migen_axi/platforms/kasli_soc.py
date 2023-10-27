@@ -13,7 +13,9 @@ class Platform(kasli_soc.Platform):
             ("ps", 0,
              Subsignal("clk", Pins("B24"), IOStandard("LVCMOS33")),
              Subsignal("por_b", Pins("C23"), IOStandard("LVCMOS33")),
-             Subsignal("srst_b", Pins("A22"), IOStandard("LVCMOS18"))),
+             Subsignal("srst_b", Pins("A22"), IOStandard("LVCMOS18")),
+             Subsignal("user_led", Pins("A23"), IOStandard("LVCMOS33")),
+             Subsignal("error_led", Pins("D20"), IOStandard("LVCMOS18"))),
             ("ddr", 0,
              Subsignal("dq",
                        Pins("J26 F25 J25 G26 H26 H23 J24 J23 K26 L23 M26 K23 M25 N24 M24 N23 "
